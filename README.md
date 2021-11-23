@@ -1,3 +1,5 @@
+![alt text](https://github.com/jrsnleons/StashIt/blob/master/resources/logo.png?raw=true)
+
 # StashIt
 
 This is a website front-end prototype for the sole purpose of CIS 1104 Human Computer Interaction school subject project. 
