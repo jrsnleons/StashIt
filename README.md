@@ -1,4 +1,4 @@
-![alt text](https://github.com/jrsnleons/StashIt/blob/master/resources/logo.png?raw=true)
+![StashIt Logo](https://github.com/jrsnleons/StashIt/blob/master/resources/logo.png?raw=true?)
 
 # StashIt
 
