@@ -12,5 +12,3 @@ In the same time, they are able to buy the fully funded and finished products. T
 - Jerson Leones
 - Ulysses Pael
 - Chanille Soriba
-
-halo test
