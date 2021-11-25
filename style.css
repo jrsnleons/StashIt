@@ -1,63 +1,202 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
-    font-family: montserrat;
     background: #E4E4E4;
-}
-
-nav{
-    background: white;
-    height: auto;
-    width: auto;
-    text-align: center;
-    border-bottom: solid black;
-}
-
-label.logo{
-    color: lightgreen;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 0;
-    font-weight: bold;
 }
 
 .hlogo{
     width: 100%;
-    max-width: 200px;
+    max-width: 100px;
     height: auto;
     /* 1292 727 */
 }
 
-nav ul{
-    float: center;
+.wrapper{
+    background: #FFF; 
+    position: fixed;
+    width: 100%;
+    border-bottom: medium solid black;
 }
 
-nav ul li{
-    display: inline-block;
-    line-height:30px;
-    margin: 0 50px;
-}
-
-nav ul li a{
-    color: black;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    padding: 7px 13 px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-align: center;
+.wrapper nav{
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
 }
 
-a.active,a:hover{
+
+nav .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .content .links{
+    margin-left: 80px;
+    display: flex;
+}
+
+nav .icon{
+    position: relative;
+    display: block;
+    align-items: center;
+    width: 50px;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.content .logo a{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.content .links li{
+    list-style: none;
+}
+
+.content .links li a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.content .links li:hover a{
+    /* background: #323c4e; */
     color: #4AE291;
-    transition: .2s;
-} 
+}
+
+.wrapper .search-icon,
+.wrapper .menu-icon,
+.wrapper .profile-icon{
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+}
+
+.wrapper .menu-icon{
+    display: none;
+}
+
+.wrapper #show-search:checked ~ .search-icon i::before{
+    content: "\f00d"; 
+}
+
+.wrapper .search-box{
+    position: absolute;
+    height: 100%;
+    max-width: calc(100% - 50px);
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wrapper #show-search:checked ~ .search-box{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all  0.3s ease;
+}
+
+.search-box input{
+    width:  100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #000;
+    background: #FFF; 
+    padding: 0 100px 0 15px;
+}
+
+.search-box input::placeholder{
+    color: #000;  
+}
+
+.search-box .go-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 60px;
+    width: 70 px;
+    background: #FFF;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.wrapper input[type="checkbox"]{
+    display: none;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+    .wrapper nav{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    nav .content .links{
+        margin-left: 30px;
+    }
+    .content .links li a{
+        padding: 8px 13px;
+    }
+    .wrapper .search-box{
+        max-width: calc(100% - 100px);
+    }
+    .wrapper .search-box input{
+        padding: 0 100px 0 15px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .wrapper .menu-icon{
+        display: block;
+    }
+    .wrapper #show-menu:checked ~ .menu-icon i::before{
+        content: "\f00d";
+    }
+    nav .content .links{
+        display: block;
+        position: fixed;
+        background: #FFF;
+        height: 100%;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        margin-left: 0;
+        max-width: 200px;
+        transition: all 0.3s ease;
+    }
+    nav #show-menu:checked ~ .content .links{
+        left: 0%;
+    }
+    .content .links li{
+        margin: 15px 20px;
+    }
+    .content .links li a{
+        line-height: 40px;
+        font-size: 20px;
+        display: block;
+        padding: 8px 18px;
+    }
+    
+}
