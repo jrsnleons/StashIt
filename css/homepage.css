@@ -1,0 +1,62 @@
+/*   BODYYY */
+
+
+.containterbod{
+    margin-top: 170px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    align-self: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  #facilities{
+    /* background-color: blanchedalmond; */
+    padding: 2rem;
+  }
+  
+  .desc{
+    text-align: right;
+    padding-left:1rem;
+    opacity: 0;
+  }
+  
+  .title-card{
+    font-weight: bold;
+    text-align: left;
+    font-size: 2rem;
+  }
+  .card{
+    border-radius: 10px;
+    border: medium solid black;
+    background-color: #C4c4c4;
+  }
+  .card:hover{
+    background-color:  rgba(74, 226, 145, 0.54);
+    transition: background-color .6s ease;
+  
+  }
+  
+  .card:hover .desc{
+    opacity: 100;
+    transition: opacity .6s ease;
+  }
+  
+  .card:hover .title-card{
+    color: white !important;
+    transition: color .6s ease;
+  }
+  
+  .card-body{
+    padding-bottom:0;
+  }
+  
+  .container{
+    padding-left:2rem;
+    padding-right:2rem;
+  }
