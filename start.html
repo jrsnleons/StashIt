@@ -45,7 +45,105 @@
 
         <!--START HERE-->
 
+        <div class="containterbod">
+            <div class="container">
+                <div class="card d-flex justify-content-center">
+                    <div class="panel row g-3">
+                       <div class="card-top row justify-content-center">
+                           <div class="card-top-left col-3">
+                                <div class="img-placeholder">
+                                    <img src="resources/img-placeholder.png" class="img-thumbnail" alt="img-thumbnail">
+                                </div>
+                           </div>
+                           <div class="card-top-right col flex-grow-1">
+                                <div class="row head-area">
+                                    <div class="campaign-name">
+                                        <p class="h5">STASH NAME</p>
+                                        <input type="text" class="form-control" placeholder="Input Campaign Name...">
+                                    </div>
+                                    <div class="goal-country row">
+                                        <div class="goal-input col">
+                                            <p class="h5">GOAL</p>
+                                            <div class="input-group">
+                                                <span class="input-group-text money-sign">$</span>
+                                                <input type="number" class="form-control amount-input" aria-label="Amount (to the nearest dollar)">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="country-input col">
+                                            <p class="h5">COUNTRY</p>
+                                            <select class="form-select" aria-label="Default select" id="country">
+                                                <option selected="">Select a country</option>
+                                                <option value="1">Japan</option>
+                                                <option value="2">Philippines</option>
+                                                <option value="3">United States</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="purpose-input">
+                                        <p class="h5">PURPOSE</p>
+                                        <input type="text" class="form-control" placeholder="Sentence description">
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="description-input">
+                            <div class="form-floating">
+                                <textarea class="form-control description" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px"></textarea>
+                                <label for="floatingTextarea">Full Description of Stash</label>
+                            </div>       
+                        </div>
+                        <div class="last-options">
+                            <div class="row">
+                                <div class="col payment-option">
+                                    <p class="h5">FUNDS TO</p>
+                                    <select class="form-select" aria-label="Default select" id="payment">
+                                        <option selected="">Select pay method</option>
+                                        <option value="1">Paypal</option>
+                                        <option value="2">Mastercard</option>
+                                        <option value="3">GCash</option>
+                                    </select>
+                                </div>
+                                <div class="col category-option">
+                                    <p class="h5">CATEGORY</p>
+                                    <select class="form-select" aria-label="Default select" id="category">
+                                        <option selected="">Select category</option>
+                                        <option value="1">Inventions</option>
+                                        <option value="2">Charity</option>
+                                        <option value="3">Startup</option>
+                                        <option value="3">Fundraiser</option>
+                                    </select>
+                                </div>
+                                <div class="col visibility-option">
+                                    <p class="h5">VISIBILITY</p>
+                                    <select class="form-select" aria-label="Default select" id="privacy">
+                                        <option selected="">Select visibiblity</option>
+                                        <option value="1">Private</option>
+                                        <option value="2">Unlisted</option>
+                                        <option value="3">Public</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-area">
+                            <div class="row area-bottom">
+                                <div class="terms-service col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="formCheckDefault">
+                                        <label class="form-check-label" for="formCheckDefault">Accepted the  <a href="#" class="terms">Terms of Service</a></label>
+                                    </div>
+                                </div>
+                                <div class="publish-buttons col">
+                                    <button type="button" class="btn btn-secondary">VERIFY</button>
+                                    <button type="button" class="btn btn-primary ">STASH</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
 
 
 
@@ -55,6 +153,29 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/016b444659.js" crossorigin="anonymous"></script>
+    <script>
+
+
+
+        //CURRENCY CHANGE START
+        var source = document.querySelector("#country");
+        const currency = document.querySelector("body > div.containterbod > div > div > div > div > div.card-top-right.col.flex-grow-1 > div > div.goal-country.row > div.goal-input.col > div > span.input-group-text.money-sign");
+        var temp = source.value;
+        source.addEventListener("change", function(){
+            if(source != temp){
+                if(source.value == 1){
+                    currency.textContent = "¥";
+                }else if(source.value == 2){
+                    currency.textContent = "₱";
+                }else{
+                    currency.textContent = "$"
+                }
+            }
+        }); 
+       //CURRENCY CHANGE END
+
+
+    </script>
 </html>
 
 
