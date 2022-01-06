@@ -12,3 +12,18 @@
 body{
     background: #E4E4E4;
 }
+
+.containterbod{
+    margin-top: 170px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    align-self: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }

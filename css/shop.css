@@ -1,0 +1,32 @@
+
+.containterbod{
+
+}
+
+
+/* HEADER */
+
+
+
+.body-head{
+    display: inline;
+    white-space: nowrap;
+}
+    
+.shop-title{
+    position: relative;
+    display: inline;
+    left: 0;
+}
+
+.icon-menu{
+    position: relative;
+    display: inline;
+    align-self: center;
+    left: 0;
+}
+
+.icon-menu i{
+    font-size: 20px;
+    
+}

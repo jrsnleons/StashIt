@@ -1,18 +1,5 @@
 
-.containterbod{
-    margin-top: 170px;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-left: 0;
-    position: relative;
-    align-self: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  }
+
   
 .panel{
     padding: 1rem;
@@ -26,19 +13,6 @@
     border-radius: 10px;
 }
 
-/*TOP PART*/
-.card-top-right{
-    /* height: 100% !important; */
-    /* background-color: red !important; */
-}
-
-.card-top-left{
-    /* background-color: blue !important; */
-}
-
-.head-area{
-   ;
-}
 
 .img-placeholder{
     position: relative;
@@ -186,6 +160,6 @@
     font-weight: bold;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
 }
-.btn-primary:checked{s
+.btn-primary:checked{
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
 }
