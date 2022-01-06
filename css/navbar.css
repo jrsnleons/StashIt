@@ -17,9 +17,11 @@
   }
   .fa-search{
     padding:0.3rem;
+    cursor: pointer;
   }
   .fa-user-circle{
     padding:0.1rem;
+    cursor: pointer;
   }
 
   .nav-left-icons {
