@@ -11,8 +11,13 @@
 .body-head{
     display: inline;
     white-space: nowrap;
-}
     
+}
+
+.body-head-1{
+    margin: 1rem;
+}
+
 .shop-title{
     position: relative;
     display: inline;
@@ -24,9 +29,50 @@
     display: inline;
     align-self: center;
     left: 0;
+    text-align: right;
 }
 
 .icon-menu i{
     font-size: 20px;
     
 }
+
+
+.shop-wrapper{
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: none;
+}
+
+.shop-wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.shop-wrapper .item{
+    min-width: 15rem;
+    min-height: 10rem;
+    text-align: center;
+    background-color: #ddd;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    outline: black;
+    outline-width: 3px;
+    outline-style: solid;
+
+}
+
+.img-product:hover{
+    filter: blur(3px) hue-rotate(180deg);
+    transition: filter 1s;
+    background: #EBEFF7;
+}
+
+
+
+
+.img-product{
+    object-fit: fill;
+    height: 160px;
+}
+
