@@ -49,13 +49,13 @@
             <div class="container">
                 <div class="card d-flex justify-content-center">
                     <div class="panel row g-3">
-                       <div class="card-top row justify-content-center">
-                           <div class="card-top-left col-3">
+                       <div class="card-top row justify-content-center g-2">
+                           <div class="card-top-left col-sm-12 col-md-5">
                                 <div class="img-placeholder">
                                     <img src="resources/img-placeholder.png" class="img-thumbnail" alt="img-thumbnail">
                                 </div>
                            </div>
-                           <div class="card-top-right col flex-grow-1">
+                           <div class="card-top-right col-sm-12 col-md-7 ">
                                 <div class="row head-area">
                                     <div class="campaign-name">
                                         <p class="h5">STASH NAME</p>
@@ -94,9 +94,9 @@
                             </div>       
                         </div>
                         <div class="last-options">
-                            <div class="row">
-                                <div class="col payment-option">
-                                    <p class="h5">FUNDS TO</p>
+                            <div class="row g-1">
+                                <div class="col-ms-12 col-md-4 payment-option">
+                                    <p class="h5">FUNDS</p>
                                     <select class="form-select" aria-label="Default select" id="payment">
                                         <option selected="">Select pay method</option>
                                         <option value="1">Paypal</option>
@@ -104,7 +104,7 @@
                                         <option value="3">GCash</option>
                                     </select>
                                 </div>
-                                <div class="col category-option">
+                                <div class="col-ms-12 col-md-4 category-option">
                                     <p class="h5">CATEGORY</p>
                                     <select class="form-select" aria-label="Default select" id="category">
                                         <option selected="">Select category</option>
@@ -114,7 +114,7 @@
                                         <option value="3">Fundraiser</option>
                                     </select>
                                 </div>
-                                <div class="col visibility-option">
+                                <div class="col-ms-12 col-md-4 visibility-option">
                                     <p class="h5">VISIBILITY</p>
                                     <select class="form-select" aria-label="Default select" id="privacy">
                                         <option selected="">Select visibiblity</option>
@@ -126,16 +126,22 @@
                             </div>
                         </div>
                         <div class="bottom-area">
-                            <div class="row area-bottom">
-                                <div class="terms-service col">
+                            <div class="row g-2 area-bottom">
+                                <div class="terms-service col col-sm-12">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="formCheckDefault">
                                         <label class="form-check-label" for="formCheckDefault">Accepted the  <a href="#" class="terms">Terms of Service</a></label>
                                     </div>
                                 </div>
-                                <div class="publish-buttons col">
-                                    <button type="button" class="btn btn-secondary">VERIFY</button>
-                                    <button type="button" class="btn btn-primary ">STASH</button>
+                                <div class="publish-buttons col col-sm-12">
+                                    <div class="row g-1">
+                                        <div class="col-sm-12 col-md-6">
+                                            <button type="button" class="btn btn-secondary">VERIFY</button>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <button type="button" class="btn btn-primary ">STASH</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -144,12 +150,6 @@
             </div>
 
         </div>
-
-
-
-
-
-
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/016b444659.js" crossorigin="anonymous"></script>

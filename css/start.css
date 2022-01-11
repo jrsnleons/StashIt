@@ -13,14 +13,31 @@
     border-radius: 10px;
 }
 
+.card-top-left{
+    padding: 0;
+}
 
 .img-placeholder{
     position: relative;
     background-color: #E4E4E4;
     border-style: solid;
     border-width: 3px;
-    height: 100%;
+    height: 120;
     width: 100%;
+    cursor: pointer;
+}
+
+.goal-country{
+    margin: 1rem 0rem;
+}
+
+.goal-input{
+    padding: 0;
+    margin-right: 00.5rem;
+}
+
+.country-input{
+    padding: 0;
 }
 
 .campaign-name{
@@ -115,12 +132,17 @@
     vertical-align: middle !important;
 }
 
+.btn{
+
+}
+
 .btn-secondary{
     background-color: white;
     color: black;
     font-weight: 600px;
     border-style: none;
     border-radius: 20px;
+    vertical-align: middle;
 }
 .btn-secondary:hover{
     background-color: #E4E4E4;
@@ -140,6 +162,7 @@
     border-width: 3px;
     border-style: solid;
     font-weight: bold;
+    
 }
 .btn-primary:hover{
     background-color: #4AE291;
