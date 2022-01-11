@@ -1,0 +1,159 @@
+
+.top-area{
+    background-color: white;
+    border-radius: 5px;
+    border-width: solid;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.left-area{
+    text-align: center;
+}
+
+.img-area{
+    background-color: #C4C4C4;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.img{
+    width: 100%;
+    height: auto; 
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.footer{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.far{
+    cursor: pointer;
+}
+
+.far:hover{
+    color: #4AE291;
+    transition: ease-in-out;
+}
+
+
+.btn-area{
+    text-align: center;
+}
+
+.btn-primary{
+    color: black;
+    font-weight: bold;
+    background-color: #4AE291;
+    outline-width: 0px;
+    border-width: 2px;
+    border-color: #4AE291;
+    width: 8rem;
+}
+
+.btn-primary:hover{
+    background-color: #4AE291;
+    color: black;
+    border-color: black;
+    border-width: 2px;
+}
+
+.btn-primary::selection{
+    background-color: #4AE291;
+    color: black;
+}
+
+.btn-primary::selection:hover{
+    background-color: #4AE291;
+    color: black;
+    border-color: black;
+}
+
+.btn-outline-primary{
+    outline-color: black;  
+    border-color: black;
+    border-width: 2px;
+    color: black;
+    font-weight: bold;
+    width: 8rem;
+}
+
+.btn-outline-primary:hover{
+    background: none;
+    color: black;
+    border-color: #4AE291;
+    background-color: #4AE291;
+}
+
+/* -------------------- */
+
+
+.updates-section{
+
+}
+
+.header-card{
+    padding: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.header-card .fas{
+    padding-right: 0.5rem;
+}
+
+.header-card h6{
+    vertical-align: bottom;
+    text-align: center;
+    margin: 0px;
+}
+
+.shop-wrapper{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-height: 10rem;
+}
+
+.body-card{
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.title-card{
+    text-align: right;
+    color: black;
+}
+  
+.card{
+    min-width: 20rem;
+    height: 15rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: medium solid black;
+}
+
+.card-img{
+    position: flex;
+    width: 50%;
+    height: auto;
+}
+
+/* .img-product{
+    object-fit: fill;
+    height: 160px;
+}
+
+.body-card p{
+    font-size: auto;
+} */
