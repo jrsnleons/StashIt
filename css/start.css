@@ -136,10 +136,13 @@
 .btn-secondary{
     background-color: white;
     color: black;
-    font-weight: 600px;
-    border-style: none;
-    border-radius: 20px;
-    vertical-align: middle;
+    font-weight: bold;
+    border-width:3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    vertical-align: bottom;
+    text-align: end;
 }
 .btn-secondary:hover{
     background-color: #E4E4E4;
@@ -183,3 +186,15 @@
 .btn-primary:checked{
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
 }
+
+.sec-btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.1rem 0rem;
+}
+
+.pri-btn{
+    text-align: center;
+}
+
+
