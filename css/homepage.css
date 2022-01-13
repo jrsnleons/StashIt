@@ -58,6 +58,11 @@
   .card-body{
     padding-bottom:0;
   }
+
+  .card-body a{
+    text-decoration: none;
+    color:black;
+  }
   
   .container{
     padding-left:10rem;
